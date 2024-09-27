@@ -1,0 +1,8 @@
+.Home .allCards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}

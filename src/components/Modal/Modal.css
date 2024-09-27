@@ -1,0 +1,77 @@
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff65;
+}
+.Modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 750px;
+    height: 500px;
+    background-color: #ffffff;
+    position: relative;
+    gap: 20px;
+}
+.Modal .imageSide{
+    width: 40%;
+}
+.Modal .imageSide img{
+    width: 100%;
+}
+.Modal .detailSide{
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+}
+.Modal .colorChoices .allColors {
+    display: flex;
+    gap: 10px;
+}
+.Modal .colorChoices .color{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Modal .closeModal{
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.Modal .closeModal:hover i{
+    color: red;
+}
+.Modal .quantity{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Modal .quantity i{
+    cursor: pointer;
+}
+.Modal .quantity .number{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(138, 138, 138);
+}
+.Modal .addToCart{
+    padding: 10px 20px;
+    background-color: rgb(93, 39, 2);
+    color: #ffffff;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+.Card{
+    width: 250px;
+    /* border: 1px solid gold; */
+    background-color: rgb(230, 229, 229);
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Card .image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.Card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Card .details{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    height: 100px;
+}
+.Card .details .text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Card .details .detailsButton{
+    border: 1px solid black;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Card .details .detailsButton:hover {
+    background-color: gold;
+}
+.Card .details .detailsButton img{
+    width: 20px;
+}
+
+/* =================== modal ================== */
+/* .modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
