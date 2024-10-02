@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {useNavigate } from 'react-router-dom';
 const Header = () => {
     const navigate = useNavigate();
-    const cartItems = JSON.parse(localStorage.getItem('cartItems'));
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const [itemsInCart, setItemsInCart] = useState(cartItems.length);
 
     return (

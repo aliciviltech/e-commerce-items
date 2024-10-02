@@ -5,7 +5,7 @@ import Cart from '../Cart/Cart';
 
 const Modal = ({ isModal, setIsModal, targetSuit }) => {
     const navigate = useNavigate();
-    const cartItems = JSON.parse(localStorage.getItem('cartItems'));
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [] ;
     const [itemsInCart, setItemsInCart] =useState(cartItems.length);
     const [showCartAlert, setShowCartAlert] = useState(false);
     const [targetColor, setTargetColor] = useState(targetSuit.imageURL.defaultImage);
