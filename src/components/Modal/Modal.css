@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #ffffff65;
@@ -67,6 +67,10 @@
     justify-content: center;
     border: 1px solid rgb(138, 138, 138);
 }
+.Modal .cartContainer{
+    display: flex;
+    gap: 20px;
+}
 .Modal .addToCart{
     padding: 10px 20px;
     background-color: rgb(93, 39, 2);
@@ -74,4 +78,50 @@
     border: none;
     width: fit-content;
     cursor: pointer;
+}
+.Modal .cart{
+    width: fit-content;
+}
+.Modal .cartAlert{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+.Modal .cartAlert img{
+    width: 50%;
+}
+
+@media screen and (max-width:767px) {
+    .Modal{
+        width: 95%;
+        margin: auto;
+        height: unset;
+        flex-direction: column;
+    }
+    .Modal .imageSide{
+        width: 100%;
+        text-align: center;
+    }
+    .Modal .imageSide img{
+        width: 50%;
+    }
+    .Modal .detailSide{
+        width: 90%;
+        margin: auto;
+        padding-bottom: 10px;
+
+    }
+    .Modal .detailSide h2{
+        font-size: 20px;
+    }
+    .Modal .colorChoices .color{
+        width: 30px;
+        height: 30px;
+    }
 }

@@ -4,11 +4,11 @@ import Modal from '../Modal/Modal';
 
 const Card = ({suit}) => {
   const [isModal, setIsModal] = useState(false);
-  const [targetSuit, setTargetSuit] = useState(suit);
+  const [targetSuit, setTargetSuit] = useState();
   return (
     <div className='Card'>
         <div className="image">
-            <img src={suit.imageURL} alt="suit_image" />
+            <img src={suit.imageURL.defaultImage} alt="suit_image" />
         </div>
         <div className="details">
             <div className="text">
@@ -20,8 +20,10 @@ const Card = ({suit}) => {
             </div>
         </div>
 
-      
-        <Modal isModal={isModal} setIsModal={setIsModal} targetSuit={targetSuit}/>
+        {
+          targetSuit && 
+          <Modal isModal={isModal} setIsModal={setIsModal} targetSuit={targetSuit}/>
+        }
         
     </div>
   )

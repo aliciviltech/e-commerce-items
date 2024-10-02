@@ -1,0 +1,44 @@
+.CheckOut{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(231, 231, 231);
+}
+.CheckOut>h1{
+    text-align: center;
+}
+.CheckOut .item{
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.CheckOut .item .textBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.CheckOut .item .imageBox{
+    width: 100px;
+}
+.CheckOut .item .imageBox img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.CheckOut .grandTotal{
+    text-align: center;
+}
+
+.CheckOut .removeItem button{
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}

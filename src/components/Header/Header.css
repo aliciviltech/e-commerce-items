@@ -1,0 +1,27 @@
+.headerRow1{
+    width: 90%;
+    margin: auto;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.headerRow1 span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.headerRow2{
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerRow2 .anchors{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
